@@ -2,9 +2,9 @@
 
 namespace ArtMin96\FilamentStripeDashboard\Tests;
 
+use ArtMin96\FilamentStripeDashboard\FilamentStripeDashboardServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use ArtMin96\FilamentStripeDashboard\FilamentStripeDashboardServiceProvider;
 
 class TestCase extends Orchestra
 {

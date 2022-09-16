@@ -13,7 +13,6 @@ use Filament\Resources\Table;
 use Filament\Tables\Actions\ViewAction;
 use Filament\Tables\Columns\BadgeColumn;
 use Filament\Tables\Columns\TextColumn;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
 
@@ -24,7 +23,7 @@ class StripeDashboardResource extends Resource
     public static function getWidgets(): array
     {
         return [
-            AvailableBalance::class
+            AvailableBalance::class,
         ];
     }
 
@@ -67,10 +66,10 @@ class StripeDashboardResource extends Resource
                 ->formatStateUsing(function (string $state): string {
                     return Str::ucfirst($state);
                 })
-                ->toggleable()
+                ->toggleable(),
         ])
             ->actions([
-                ViewAction::make()
+                ViewAction::make(),
             ]);
     }
 

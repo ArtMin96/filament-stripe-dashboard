@@ -91,7 +91,7 @@ class Charges extends Model
         $metadataString = [];
         $metadataJson = json_decode($this->metadata, true);
 
-        if (!empty($metadataJson)) {
+        if (! empty($metadataJson)) {
             foreach ($metadataJson as $key => $metadata) {
                 $metadataKey = Str::of($key)->headline()->toString();
                 $metadataString[$key] = [

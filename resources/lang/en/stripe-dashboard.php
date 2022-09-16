@@ -19,5 +19,5 @@ return [
         'disputed' => 'Disputed',
         'fraud_details' => 'Fraud Details',
         'transfer_group' => 'Transfer Group',
-    ]
+    ],
 ];

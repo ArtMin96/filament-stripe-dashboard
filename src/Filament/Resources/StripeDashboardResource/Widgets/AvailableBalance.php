@@ -23,7 +23,7 @@ class AvailableBalance extends BaseWidget
     {
         return [
             Card::make('Available balance', $this->availableBalance()),
-            Card::make('Pending balance', $this->pendingBalance())
+            Card::make('Pending balance', $this->pendingBalance()),
         ];
     }
 

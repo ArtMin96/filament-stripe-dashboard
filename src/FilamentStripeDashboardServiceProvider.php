@@ -2,15 +2,15 @@
 
 namespace ArtMin96\FilamentStripeDashboard;
 
+use ArtMin96\FilamentStripeDashboard\Commands\FilamentStripeDashboardCommand;
 use ArtMin96\FilamentStripeDashboard\Filament\Resources\StripeDashboardResource;
 use Filament\PluginServiceProvider;
 use Spatie\LaravelPackageTools\Package;
-use ArtMin96\FilamentStripeDashboard\Commands\FilamentStripeDashboardCommand;
 
 class FilamentStripeDashboardServiceProvider extends PluginServiceProvider
 {
     protected array $resources = [
-        StripeDashboardResource::class
+        StripeDashboardResource::class,
     ];
 
     public function configurePackage(Package $package): void
